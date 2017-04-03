@@ -1,0 +1,11 @@
+{
+  "name": "hello-slack",
+  "display-name": "Hello Slack Sift",
+  "description": "",
+  "author": "",
+  "version": "1.0.0",
+  "#": "Please use 'redsift npm' instead of system 'npm' ",
+  "dependencies": {
+    "request-promise": "^3.0.0"
+  }
+}
