@@ -26,6 +26,7 @@ module.exports = function (got) {
     if (d.value) {
       try {
         var msg = JSON.parse(d.value);
+        console.log("SLACKBOT: ",  msg);
         if (msg.subtype === 'message_deleted') {
           continue;
         }
@@ -45,5 +46,9 @@ module.exports = function (got) {
       }
     }
   }
-  return promises;
+  return {
+    name: "seed_text",
+    key: "mike",
+    value: "boo!"
+  };
 };
